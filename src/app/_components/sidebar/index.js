@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.css";
+import Cookies from "js-cookie";
+
 const Sidebar = () => {
+  useEffect(() => {
+    const token = Cookies.get("token");
+    if (!token) {
+      window.location.href = "/";
+    }
+  }, []);
   return (
     <div className="sidebar-container">
       <div>
