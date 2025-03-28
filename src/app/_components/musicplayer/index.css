@@ -470,6 +470,7 @@ p {
     border: none;
     cursor: pointer;
     color: #fff;
+    width: 100%;
 
     @media (min-width: 768px) {
         display: none;
@@ -684,6 +685,7 @@ p {
     left: 50%;
     transform: translateX(-50%);
 
+    display: flex;
     @media (max-width: 768px) {
         width: 100%;
         border-radius: 0;
@@ -699,6 +701,12 @@ p {
     margin-bottom: 10px;
     width: 90%;
     bottom: 0;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        border-radius: 0;
+        bottom: 0;
+    }
 }
 
 .now-playing {
