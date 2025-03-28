@@ -1,0 +1,10 @@
+.home-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    background-color: #181818;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
